@@ -75,6 +75,12 @@ The enhanced transcription is better than the baseline because it fixes domain-s
 
 ![Image](https://nextwork.ai/overjoyed_magenta_proud_yak/uploads/1542c25d-ea3b-5dc5-87fc-a77416aabb87_k1l2m3n4)
 
+> ⚠️ **Note: the generated SRT still needs fixing.** The subtitle file from the enhanced job ([`project-files/srtSubtitles.srt`](project-files/srtSubtitles.srt)) still has two mistakes:
+> - **"Uh-huh"** (0:16) wasn't filtered, because vocabulary filters only match whole words, so `uh` doesn't catch `uh-huh`.
+> - **"403 forbidden"** (0:07) stayed lowercase, likely because Transcribe output the number `403`, so the phrase `four-or-three-forbidden` never matched.
+>
+> To fix: re-run the job with the improved [`filler-words-filter.txt`](project-files/filler-words-filter.txt) (one word per line, adds `uh-huh`) and [`custom-vocabulary.txt`](project-files/custom-vocabulary.txt) (adds `forbidden → Forbidden`).
+
 ---
 
 *Built with [NextWork](https://nextwork.ai) - [View this project](https://nextwork.ai/projects/1542c25d-ea3b-5dc5-87fc-a77416aabb87)*
