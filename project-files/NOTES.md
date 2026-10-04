@@ -2,7 +2,7 @@
 
 | File | What it is |
 |---|---|
-| `srtSubtitles.srt` | Subtitles from my **enhanced** transcription job (custom vocabulary + vocabulary filter) |
+| `srtSubtitles.srt` | Subtitles from my **enhanced** transcription job (custom vocabulary + vocabulary filter). ⚠️ **Still needs fixing** (see below) |
 | `filler-words-filter.txt` | Vocabulary filter, **improved after the project** (one word per line, added `uh-huh`) |
 | `custom-vocabulary.txt` | Custom vocabulary in table format, **rebuilt after the project** (added `forbidden → Forbidden`) |
 
@@ -13,4 +13,7 @@
 - ❌ "403 forbidden" stayed lowercase. Transcribe likely output the number `403`, so the phrase `four-or-three-forbidden` never matched. Adding `forbidden` as its own phrase should fix it.
 - 📝 Vocabulary filter files should list **one word per line**.
 
-The improved files weren't re-run because the AWS resources were already cleaned up.
+## ⚠️ To do: the SRT still needs fixing
+`srtSubtitles.srt` still has **"Uh-huh"** (0:16) and lowercase **"403 forbidden"** (0:07). To fix it, re-run the transcription job using the improved `filler-words-filter.txt` and `custom-vocabulary.txt`, then replace this file with the new SRT.
+
+(Not re-run yet because the AWS resources were already cleaned up.)
