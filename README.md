@@ -75,8 +75,6 @@ The enhanced transcription is better than the baseline because it fixes domain-s
 
 ![Image](https://nextwork.ai/overjoyed_magenta_proud_yak/uploads/1542c25d-ea3b-5dc5-87fc-a77416aabb87_k1l2m3n4)
 
-## Real Time Transcription
-
 ---
 
 *Built with [NextWork](https://nextwork.ai) - [View this project](https://nextwork.ai/projects/1542c25d-ea3b-5dc5-87fc-a77416aabb87)*

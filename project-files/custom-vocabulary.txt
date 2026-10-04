@@ -1,0 +1,5 @@
+Phrase	SoundsLike	IPA	DisplayAs
+player			Player
+repositoriesies			repositories
+four-or-three-forbidden			403 Forbidden
+forbidden			Forbidden
